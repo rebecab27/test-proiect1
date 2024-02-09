@@ -111,7 +111,7 @@ h2 {
   background-color: #1e1823;
 }
 
-@media screen and(429px <= width <= 768px) {
+@media screen and (429px <= width <= 768px) {
   .container {
     width: auto;
   }
@@ -121,18 +121,19 @@ h2 {
   }
 
   .taste-sensations-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    columns: 2;
     gap: 32px;
+    display: block;
   }
+
   .div-text-taste-senations {
     max-width: 704px;
   }
   .paragraphs-taste-senations {
     max-width: 704px;
+  }
+  .li-taste-sensations {
+    margin-bottom: 32px;
   }
 }
 
@@ -153,15 +154,9 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
   }
-  .taste-sensations-list {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   .div-text-taste-senations {
     max-width: 335px;
   }
