@@ -118,12 +118,14 @@ h2 {
   .taste-senations-section {
     display: flex;
     padding: 100px 32px;
+    height: 620px;
   }
 
   .taste-sensations-list {
     columns: 2;
     gap: 32px;
     display: block;
+    flex-wrap: wrap;
   }
 
   .div-text-taste-senations {
