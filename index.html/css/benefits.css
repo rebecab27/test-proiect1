@@ -46,6 +46,7 @@ h2 {
 .benefits-list {
   display: flex;
   gap: 70px;
+  flex-wrap: wrap;
 }
 .titles-benefits {
   color: #ffffff;
@@ -91,7 +92,7 @@ h2 {
   height: 124px;
   background: rgba(255, 255, 255, 0.5);
 } */
-@media screen and(429px <= width <= 768px) {
+@media screen and (429px <= width <= 768px) {
   .container {
     width: auto;
   }
@@ -100,13 +101,15 @@ h2 {
     padding: 50px 32px;
   }
 
-  .benefits-list {
-    columns: 2;
-    gap: 32px;
-    display: block;
-  }
   .paragraphs-benefits {
     max-width: 308px;
+  }
+
+  .benefits-list {
+    gap: 32px;
+    height: 620px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Două coloane */
   }
 }
 
